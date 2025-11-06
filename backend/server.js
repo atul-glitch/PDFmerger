@@ -13,7 +13,7 @@ const app = express();
 const upload = multer({ dest: 'uploads/' });
 
 app.use(cors());
-app.use(express.static('public'));
+app.use(express.static('dist'));
 
 // Test endpoint
 app.get('/api/test', (req, res) => {
